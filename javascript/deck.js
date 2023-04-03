@@ -64,7 +64,7 @@ class Card{
     // Function which returns the url of the respectives cards background picture
     get cardPic(){
         var picIndex = this.suit - 1 + (this.value*4);
-        let front = "url('/../images/";
+        let front = "url('../images/";
         let middle = front.concat(CARDS[picIndex]);
         let back = ".png')"
         let picUrl = middle.concat(back);
