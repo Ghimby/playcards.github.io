@@ -88,19 +88,19 @@ body{
 }
 
 #game-icon{
-    background-image: url(/../images/cards.jpg);
+    background-image: url(../images/cards.jpg);
 }
 #blackjack-icon{
-    background-image: url(/../images/blackjackicon.png);
+    background-image: url(../images/blackjackicon.png);
 }
 #poker-icon{
-    background-image: url(/../images/pokericon.png);
+    background-image: url(../images/pokericon.png);
 }
 #war-icon{
-    background-image: url(/../images/waricon.png);
+    background-image: url(../images/waricon.png);
 }
 #concentration-icon{
-    background-image: url(/../images/concentrationicon.png);
+    background-image: url(../images/concentrationicon.png);
 }
 .icon {
     -webkit-box-sizing: border-box;
