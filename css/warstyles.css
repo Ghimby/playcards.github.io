@@ -1,0 +1,58 @@
+/* Changing box sizing of all elements */
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
+/* Creating layout for the game cards */
+#game {
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 167px);
+    grid-template-rows: 242px 2rem 242px;
+    gap: .5rem;
+    cursor: pointer;
+    justify-content: center;
+    padding-top: 2rem;
+    column-gap: 4rem;
+}
+
+.text{
+    grid-column: span 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.deck {
+    height: 100%;
+    width: 100%;
+    border: 10px solid white;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5rem;
+    font-weight: bold;
+    
+    user-select: none;
+    box-shadow: #000000 0px 0px 50px;
+    text-shadow: rgb(0, 0, 0) 0px 0px 10px;
+
+    /* Background generated using: https://www.magicpattern.design/tools/css-backgrounds */
+    background-color: #000000;
+    opacity: 1;
+    background-image:  linear-gradient(135deg, #123b99 25%, transparent 25%), linear-gradient(225deg, #123b99 25%, transparent 25%), linear-gradient(45deg, #123b99 25%, transparent 25%), linear-gradient(315deg, #123b99 25%, #000000 25%);
+    background-position:  21px 0, 21px 0, 0 0, 0 0;
+    background-size: 42px 42px;
+    background-repeat: repeat;
+}
+
+.card-slot{
+    height: 100%;
+    width: 100%;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 8px;
+    user-select: none;
+    box-shadow: #000000 0px 0px 30px;
+    background-color: rgba(0, 0, 0, 0.7);
+}

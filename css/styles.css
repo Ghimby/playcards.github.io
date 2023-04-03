@@ -1,0 +1,437 @@
+/* Note, cardgames.io was used as inspiration for some of this css */
+*{
+    font-family: "Lato";
+    color: white;
+}
+
+body{
+    /* background optained from https://www.magicpattern.design/tools/css-backgrounds*/
+    background-color: #003a00;
+    background-image:  linear-gradient(135deg, #002c00 25%, transparent 25%), linear-gradient(225deg, #002c00 25%, transparent 25%), linear-gradient(45deg, #002c00 25%, transparent 25%), linear-gradient(315deg, #002c00 25%, #003a00 25%);
+    background-position:  80px 0, 80px 0, 0 0, 0 0;
+    background-size: 80px 80px;
+    background-repeat: repeat;
+
+}
+
+.gameIcon{
+    width: 200px;
+}
+
+#board-wrapper-and-ads {
+    width: 100%;
+    height: 816px;
+}
+
+#draper-left {
+    float: left;
+    width: 160px;
+}
+
+#draper-right {
+    float: left;
+    width: 160px;
+}
+
+.don-draper {
+    width: 160px;
+    height: 696px;
+    margin-top: 117px;
+    float: left;
+    -webkit-transition: opacity 1s linear;
+    -o-transition: opacity 1s linear;
+    -moz-transition: opacity 1s linear;
+    transition: opacity 1s linear;
+}
+
+.don-draper label {
+    display: block;
+    text-align: center;
+    height: 20px;
+    padding: 0;
+    width: 100%;
+    font-size: 12px;
+}
+
+#board-and-header {
+    float: left;
+}
+
+#header {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin-top: 50px;
+}
+
+#title {
+    position: relative;
+    padding: 12px;
+    height: 71px;
+    margin-top: 0;
+    white-space: nowrap;
+}
+
+.logo{
+    width: 400px;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+     left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+#menucontainer {
+    margin-bottom: 3px;
+    margin-top: -10px
+}
+
+#game-icon{
+    background-image: url(/../images/cards.jpg);
+}
+#blackjack-icon{
+    background-image: url(/../images/blackjackicon.png);
+}
+#poker-icon{
+    background-image: url(/../images/pokericon.png);
+}
+#war-icon{
+    background-image: url(/../images/waricon.png);
+}
+#concentration-icon{
+    background-image: url(/../images/concentrationicon.png);
+}
+.icon {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 110px;
+    height: 110px!important;
+    margin: auto;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    border-radius: 12px;
+    border: solid 2px #000000;
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+    background-position: 50% 50%;
+}
+
+.game-link {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 130px;
+    display: inline-block;
+    margin: 10px -2px
+}
+
+.game-link:hover .icon {
+    -webkit-box-shadow: #fff 0 0 15px;
+    -moz-box-shadow: #fff 0 0 15px;
+    box-shadow: #fff 0 0 15px;
+    -webkit-background-size: 115% 115%;
+    -moz-background-size: 115%;
+    -o-background-size: 115%;
+    background-size: 115%;
+}
+
+#email-button{
+    color: #000000;
+}
+
+.game-link:hover span {
+    text-shadow: white 2px 2px 5px;
+}
+
+a:hover {
+    text-shadow: white 1px 1px 5px;
+}
+
+a{
+    text-decoration: none;
+}
+
+#wrapper {
+    width: 1200;
+    margin: 0 auto;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+#textcontent {
+    width: 716px;
+    text-align: justify;
+    margin-left: 160px;
+    background-color: rgba(0, 0, 0, 0.9);
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+}
+
+h2{
+    font-size: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+h3{
+    font-size: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
+    line-height: 0;
+}
+
+#page-gap{
+    font-size: 10px;
+}
+
+p{
+    font-size: 20px;
+    line-height: 1.5em;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#game-list{
+    font-size: 30px;
+    list-style-type: none;
+    margin: 20px;
+    padding: 0;
+    line-height: 1.5em;
+}
+#rules-list{
+    font-size: 15px;
+    margin-right: 30px;
+    line-height: 1.8em;
+}
+#video-title{
+    font-size: 18px;
+    margin: 0px;
+    font-weight: bold;
+    text-decoration: underline;
+    padding-bottom: 8px;
+    font-style: italic;
+}
+
+#game-table, th, td{
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid;
+    border-collapse: collapse;
+    border-color: #fff;
+}
+td{
+    width: 70%;
+    text-align: center;
+}
+th{
+    height: 25px;
+}
+
+.jump-to-top{
+    font-size: 20px;
+    margin-left: 20px;
+}
+
+.thank-you{
+    text-align: center;
+}
+
+
+.game-link span {
+    color: #fff;
+    text-align: center;
+    font-weight: 600;
+    width: 100%;
+    display: block;
+    font-family: "Lato";
+    font-size: 13px;
+    margin-top: 3px;
+    margin-bottom: 3px
+}
+
+#menu {
+    padding: 2px;
+    padding-bottom: 20px;
+    position: relative;
+    margin: auto;
+    text-align: center;
+}
+
+#email-form{
+    display: block;
+    text-align: center;
+}
+
+#menu li {
+    display: inline;
+    list-style: none;
+    font-size: 18px;
+}
+
+#board {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    position: relative;
+    -webkit-transition: background-color 150ms ease-in,opacity .5s linear;
+    -o-transition: background-color 150ms ease-in,opacity .5s linear;
+    -moz-transition: background-color 150ms ease-in,opacity .5s linear;
+    transition: background-color 150ms ease-in,opacity .5s linear
+}
+
+#board {
+    background-color: rgba(0, 0, 0, 0.4);
+    border: solid 3px #fff;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+    color: #fff;
+    padding: 5px;
+    -webkit-box-shadow: #333 0 0 7px;
+    -moz-box-shadow: #333 0 0 7px;
+    box-shadow: #333 0 0 7px;
+    margin-bottom: 15px;
+    z-index: 1
+}
+
+#play-page {
+    position: relative;
+    height: 600px;
+    margin: auto;
+    width: 700px;
+}
+#play-page {
+    text-align: center
+}
+#play-links {
+    width: 97%;
+    margin: auto;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    text-align: center;
+    padding-top: 0px;
+}
+
+.youtube-thumbnail{
+    border: solid 2px #ffffff;
+    border-radius: 5px;
+}
+
+.youtube-container{
+    display: block;
+    text-align: center;
+}
+
+/* Code taken from cardgames.io and then edited*/
+@media (min-width: 1116px) and (max-width:1205px) {
+    #wrapper {
+        width:1100px;
+    }
+
+    #draper-right {
+        width: 300px;
+    }
+    #draper-left {
+        width: 300px;
+    }
+}
+
+@media (min-width: 960px) and (max-width:1115px) {
+    #wrapper {
+        width:960px;
+    }
+
+    #draper-right {
+        width: 160px;
+    }
+}
+
+@media (min-width: 1206px) {
+    #wrapper {
+        width:1190px;
+    }
+
+    #draper-left {
+        display: block;
+    }
+
+    #textcontent {
+        margin-left: 300px;
+    }
+
+    .adslot_1 {
+        display: block;
+    }
+}
+
+@media (min-width: 1347px) {
+    #wrapper {
+        width:1330px;
+    }
+
+    #draper-right {
+        width: 300px;
+    }
+    #draper-left {
+        width: 300px;
+    }
+}
+
+@media (max-width: 1044px) {
+    #wrapper {
+        width:961px;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box
+    }
+
+    #board {
+        width: 700px;
+    }
+
+    #board-and-header {
+        width: 716px;
+        margin-left: 5px
+    }
+}
+
+@media (max-width: 975px) {
+    #wrapper {
+        width:716px
+    }
+
+    .dev-ad,.draper-frame {
+        height: 110px
+    }
+
+    #draper-right {
+        width: 716px;
+        margin: 0 auto;
+        height: 110px;
+        float: none
+    }
+
+    #textcontent {
+        margin-top: 40px;
+    }
+
+    #board-and-header {
+        margin: 0 auto;
+        width: 100%;
+        float: none
+    }
+
+    .don-draper {
+        float: none
+    }
+}
+

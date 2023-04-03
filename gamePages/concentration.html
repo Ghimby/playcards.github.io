@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Concentration (Pairs)</title>
+    <link rel="stylesheet" href="/../css/styles.css" />
+    <link rel="stylesheet" href="/../css/gamestyles.css" />
+  </head>
+  <body>
+    <script type="text/javascript" src="/../javascript/jquery.js"></script>
+    <script type="text/javascript">
+      $(window).scroll(function () {
+        var scroll_position = $(window).scrollTop();
+        $("body").css({
+          "background-position-y": +scroll_position + "px",
+        });
+      });
+    </script>
+
+    <div id="wrapper">
+      <div id="board-wrapper-and-ads">
+        <div id="draper-left" class="don-draper">
+          <label>Advertisement</label>
+        </div>
+        <div id="board-and-header">
+          <div id="header">
+            <div id="title">
+              <a href="/../index.html"
+                ><img
+                  class="logo"
+                  src="/../images/playcards.png"
+                  alt="Website Logo"
+              /></a>
+            </div>
+            <div id="menucontainer">
+              <ul id="menu">
+                <li><a href="/../about.html">ABOUT US</a></li>
+                <li>| <a href="/../gameslist.html">GAMES LIST</a></li>
+                <li>| <a href="/../about.html">CONTACT US</a></li>
+              </ul>
+            </div>
+          </div>
+          <div id="board" class="board frontpage">
+            <div id="play-page" class="inner-page">
+              <h1>Click any card to begin</h1>
+              <p><span id="seconds">00</span>:<span id="tens">00</span></p>
+              <p id="text"></p>
+              <div id="container">
+                <script src="/../javascript/concentration.js"></script>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="draper-right" class="don-draper">
+          <label>Advertisement</label>
+        </div>
+      </div>
+      <div id="textcontent">
+        <p><br /></p>
+        <div class="warTable">
+          <table id="game-table">
+            <tr>
+              <th>Alternative Names</th>
+              <td>
+                <ul id="rules-list">
+                  <li>Pairs</li>
+                  <li>Memory</li>
+                  <li>
+                    Shinkei-suijaku (Japanese meaning "nervous breakdown")
+                  </li>
+                  <li>Matching Pairs</li>
+                  <li>Match Match</li>
+                  <li>Match Up</li>
+                  <li>Pelmanism</li>
+                  <li>Pexeso</li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <th>Players</th>
+              <td>1+</td>
+            </tr>
+            <tr>
+              <th>Age range</th>
+              <td>Any</td>
+            </tr>
+            <tr>
+              <th>Play order</th>
+              <td>Clockwise</td>
+            </tr>
+            <tr>
+              <th>Playing time</th>
+              <td>2-10 mins</td>
+            </tr>
+            <tr>
+              <th>Chance/Luck factor</th>
+              <td>Medium</td>
+            </tr>
+          </table>
+        </div>
+        <p>
+          Concentration is a classic card game that tests players' memory and
+          concentration skills.
+          <a
+            id="wiki-link"
+            href="https://en.wikipedia.org/wiki/Concentration_(card_game)"
+            target="_blank"
+            >View wiki</a
+          >
+        </p>
+        <div class="gameInfo">
+          <h2>Rules (Solo)</h2>
+          <ol id="rules-list">
+            <li>
+              A deck of cards is shuffled and placed face down in a grid
+              formation on a flat surface
+            </li>
+            <li>
+              The goal of the game is to match pairs of cards by turning them
+              over two at a time
+            </li>
+            <li>On each turn, turn over two cards</li>
+            <li>If the cards match, remove them from the game and continue</li>
+            <li>
+              If the cards do not match, turn them back over and try again
+            </li>
+            <li>Keep playing until all the cards have been matched</li>
+            <li>
+              Record the number of turns or time it took to match all the cards
+            </li>
+            <li>Try to beat your previous score by playing again</li>
+          </ol>
+          <h2>Rules (Multiplayer)</h2>
+          <ol id="rules-list">
+            <li>
+              A deck of cards is shuffled and placed face down in a grid
+              formation on a flat surface
+            </li>
+            <li>
+              The goal of the game is to match pairs of cards by turning them
+              over two at a time
+            </li>
+            <li>On each turn, a player may turn over two cards</li>
+            <li>
+              If the cards match, the player keeps them and gets another turn
+            </li>
+            <li>
+              If the cards do not match, the player turns them back over and it
+              becomes the next player's turn
+            </li>
+            <li>The game continues until all the cards have been matched</li>
+            <li>The player with the most pairs at the end of the game wins</li>
+          </ol>
+          <br />
+          <h3>More about Concentration!</h3>
+          <h2>History:</h2>
+          <p>
+            Concentration is believed to have originated in ancient China, where
+            players used paper cards and money. The game spread to Europe in the
+            16th century and became popular among the French nobility, who
+            played it with handmade cards featuring illustrations of historical
+            figures and scenes. In the 19th century, concentration games became
+            popular among children, who played with cards featuring animals,
+            flowers, and other fun designs. Today, concentration is still played
+            by people of all ages around the world.
+          </p>
+          <h2>Gameplay:</h2>
+          <p>
+            The goal of the game is to match pairs of cards by turning them over
+            two at a time. A standard deck of 52 cards can be used, or a
+            specialized deck with unique designs or themes. The cards are
+            shuffled and placed face down in a grid formation on a flat surface.
+            On each turn, a player turns over two cards, trying to match pairs
+            of cards by remembering the location of each card in the grid. If
+            the cards match, the player keeps them and takes another turn. If
+            the cards do not match, the player turns them back over and it
+            becomes the next player's turn. The game continues until all the
+            cards have been matched. The player with the most pairs at the end
+            of the game wins.
+          </p>
+          <h2>Tips:</h2>
+          <ul id="rules-list">
+            <li>
+              Focus on memorizing the location of each card as you turn it over.
+            </li>
+            <li>
+              Use a strategy to remember the cards, such as grouping them by
+              suit or value.
+            </li>
+            <li>
+              Take your time and don't rush - concentrate on each turn and avoid
+              distractions.
+            </li>
+            <li>
+              Pay attention to the cards that other players have turned over, as
+              this can help you remember the location of other cards in the
+              grid.
+            </li>
+            <li>
+              Practice regularly to improve your memory and concentration
+              skills.
+            </li>
+          </ul>
+          <h2>Cool Info:</h2>
+          <ul id="rules-list">
+            <li>
+              Concentration is also known as Memory, Match Match, Match Up, or
+              Pairs.
+            </li>
+            <li>
+              The world record for the largest game of Concentration was set in
+              2016, with over 1,300 people playing at once.
+            </li>
+            <li>
+              Some variations of the game use pictures or words instead of
+              playing cards, such as with a matching game for children.
+            </li>
+            <li>
+              Concentration has been used as a tool for cognitive therapy and
+              rehabilitation, as it can help improve memory and attention skills
+              in patients with brain injuries or disorders.
+            </li>
+          </ul>
+        </div>
+        <h2 class="thank-you">Thanks for visiting PlayCards.com!</h2>
+        <a class="jump-to-top" href="#">Jump to Top</a>
+        <p><br /></p>
+      </div>
+    </div>
+  </body>
+</html>

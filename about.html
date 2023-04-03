@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us / Contact</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <script type="text/javascript" src="/../javascript/jquery.js"></script>
+    <script type="text/javascript">
+      $(window).scroll(function () {
+        var scroll_position = $(window).scrollTop();
+        $("body").css({
+          "background-position-y": +scroll_position + "px",
+        });
+      });
+    </script>
+
+    <div id="wrapper">
+      <div id="header">
+        <div id="title">
+          <a href="index.html"
+            ><img class="logo" src="images/playcards.png" alt="Website Logo"
+          /></a>
+        </div>
+        <div id="menucontainer">
+          <ul id="menu">
+            <li><a href="index.html">HOME</a></li>
+            <li>| <a href="gameslist.html">GAMES LIST</a></li>
+            <li>| <a href="about.html">CONTACT US</a></li>
+          </ul>
+        </div>
+      </div>
+      <div id="textcontent">
+        <p id="page-gap"><br /></p>
+        <h2>About Us</h2>
+        <p>
+          Hello! My name is Alex Ghimbasan. I created PlayCards.com I am an
+          Electrical Engineering student at McMaster University. <br /><br />
+          PlayCards is a hub for all things card games! We aim to provide you
+          with both entertainment and information through our selection of
+          classic and new card games such as War, Blackjack, and many more!
+          <br />
+          <br />
+          Game pages include a playable version of the game. Our focus is not
+          only on gaming, but also on education, providing you with the history
+          and evolution of card games, as well as tips and strategies to help
+          improve your skills. <br /><br />
+          We want to emphasize that our website is strictly for entertainment
+          purposes only, without any form of gambling or betting. Our goal is to
+          bring people of all ages and genders together through the love of card
+          games. <br /><br />Our passion for card games stems from our childhood
+          memories of playing games like War with loved ones. I want to create a
+          platform where people can come together, have fun, and bond over their
+          shared love of card games. Thanks for visiting us and we hope you
+          enjoy our website!
+        </p>
+        <br />
+        <h2>Contact</h2>
+        <p>
+          Feel free to contact me with any serious inquiries, comments,
+          concerns, or bug reports!
+        </p>
+        <p id="page-gap"><br /><br /><br /></p>
+        <h2>Email me:</h2>
+        <form
+          id="email-form"
+          action="mailto:ghimbasa@mcmaster.ca"
+          method="post"
+        >
+          <label for="fname">First name:</label><br />
+          <input type="text" id="fname" name="fname" /><br />
+          <label for="lname">Last name:</label><br />
+          <input type="text" id="lname" name="lname" /><br />
+          <label for="email">Email Address:</label><br />
+          <input type="text" id="email" name="email" /><br /><br />
+          <label for="Text">Type message here:</label><br />
+          <textarea rows="10" cols="40" id="Text" name="Text"></textarea><br />
+          <input id="email-button" type="submit" value="Send Email" />
+        </form>
+        <p id="page-gap"><br /></p>
+        <a class="jump-to-top" href="#">Jump to Top</a>
+        <p id="page-gap"><br /></p>
+      </div>
+    </div>
+  </body>
+</html>

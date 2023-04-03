@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>War</title>
+    <link rel="stylesheet" href="/../css/styles.css" />
+    <link rel="stylesheet" href="/../css/warstyles.css" />
+    <script type="text/javascript" src="/../javascript/youtubeAPI.js"></script>
+  </head>
+  <body>
+    <script type="text/javascript" src="/../javascript/jquery.js"></script>
+    <script type="text/javascript">
+      $(window).scroll(function () {
+        var scroll_position = $(window).scrollTop();
+        $("body").css({
+          "background-position-y": +scroll_position + "px",
+        });
+      });
+    </script>
+
+    <div id="wrapper">
+      <div id="board-wrapper-and-ads">
+        <div id="draper-left" class="don-draper">
+          <label>Advertisement</label>
+        </div>
+        <div id="board-and-header">
+          <div id="header">
+            <div id="title">
+              <a href="/../index.html"
+                ><img
+                  class="logo"
+                  src="/../images/playcards.png"
+                  alt="Website Logo"
+              /></a>
+            </div>
+            <div id="menucontainer">
+              <ul id="menu">
+                <li><a href="/../about.html">ABOUT US</a></li>
+                <li>| <a href="/../gameslist.html">GAMES LIST</a></li>
+                <li>| <a href="/../about.html">CONTACT US</a></li>
+              </ul>
+            </div>
+          </div>
+          <div id="board" class="board frontpage">
+            <div id="play-page" class="inner-page">
+              <script src="/../javascript/war.js" type="module"></script>
+              <div id="game">
+                <div class="dealer deck">26</div>
+                <div class="dealer-slot card-slot"></div>
+                <div class="text">Click Anywhere To Deal</div>
+                <div class="player deck">26</div>
+                <div class="player-slot card-slot"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="draper-right" class="don-draper">
+          <label>Advertisement</label>
+        </div>
+      </div>
+      <div id="textcontent">
+        <p><br /></p>
+        <div class="warTable">
+          <table id="game-table">
+            <tr>
+              <th>Alternative Name</th>
+              <td>Battle</td>
+            </tr>
+            <tr>
+              <th>Players</th>
+              <td>2+</td>
+            </tr>
+            <tr>
+              <th>Age range</th>
+              <td>Any</td>
+            </tr>
+            <tr>
+              <th>Rank (high-&gt;low)</th>
+              <td>
+                K&gt;Q&gt;J&gt;10&gt;9&gt;8&gt;7&gt;6&gt;5&gt;4&gt;3&gt;2&gt;A
+              </td>
+            </tr>
+            <tr>
+              <th>Play order</th>
+              <td>Clockwise</td>
+            </tr>
+            <tr>
+              <th>Playing time</th>
+              <td>10-40 mins</td>
+            </tr>
+            <tr>
+              <th>Chance/Luck factor</th>
+              <td>Very High</td>
+            </tr>
+          </table>
+        </div>
+        <p>
+          War is a simple and straightforward game that can be played with just
+          a deck of cards and two players.
+          <a
+            id="wiki-link"
+            href="https://en.wikipedia.org/wiki/War_(card_game)"
+            target="_blank"
+            >View wiki</a
+          >
+        </p>
+        <div class="gameInfo">
+          <h2>Rules</h2>
+          <ol id="rules-list">
+            <li>
+              The game is played with a standard deck of 52 playing cards (No
+              Jokers)
+            </li>
+            <li>
+              The deck is shuffled and then divided evenly among the players
+            </li>
+            <li>
+              Each player turns over the top card from their pile of cards at
+              the same time
+            </li>
+            <li>
+              The player with the higher card wins that round and takes both
+              cards, placing them face down at the bottom of their pile
+            </li>
+            <li>
+              If the two cards turned over are of the same rank (e.g., both
+              players turn over a 6), then a "war" is declared. Each player
+              places three cards face down and then turns over a fourth card.
+              The player with the highest fourth card wins all the cards in that
+              round. If the fourth cards are also tied, then the process repeats
+              until there is a winner
+            </li>
+            <li>
+              The game continues until one player has won all of the cards
+            </li>
+            <li>Have fun!</li>
+          </ol>
+          <br />
+          <h3>More about War!</h3>
+          <h2>History:</h2>
+          <p>
+            The origins of the game War are not clear, but it is believed to
+            have originated in the United States in the 19th century. The game
+            became popular among soldiers during World War I and World War II,
+            as it was a simple game that could be played with just a deck of
+            cards. The game has since become a classic family game that is
+            enjoyed by people of all ages.
+          </p>
+          <h2>Gameplay:</h2>
+          <p>
+            The game of War is a simple game of chance that requires no special
+            skills or strategies. Each player starts with an equal number of
+            cards and the goal of the game is to win all the cards by being the
+            first player to collect all the cards in the deck. (Add a see rules
+            hyperlink here which scrolls you up)
+          </p>
+          <h2>Cool Info:</h2>
+          <ul id="rules-list">
+            <li>
+              In some variations of the game, players can also win by collecting
+              a certain number of cards, rather than winning all the cards.
+            </li>
+            <li>
+              The game can be played with more than two players by dividing the
+              deck equally among all players
+            </li>
+            <li>
+              Some people play with additional rules, such as allowing players
+              to "double down" by placing two cards face down instead of one
+              during a war
+            </li>
+            <li>
+              The game has been used as a teaching tool to help children learn
+              about numbers, counting, and probability
+            </li>
+            <li>
+              The game has been adapted into many different variations,
+              including digital versions and even a board game
+            </li>
+          </ul>
+          <p>
+            Overall, the game of War is a classic and simple game that is easy
+            to learn and play. Its history and widespread popularity make it a
+            staple in many households and a fun way to pass the time.
+          </p>
+          <h2>Helpful Videos</h2>
+          <div class="youtube-container"></div>
+        </div>
+        <h2 class="thank-you">Thanks for visiting PlayCards.com!</h2>
+        <a class="jump-to-top" href="#">Jump to Top</a>
+        <p><br /></p>
+      </div>
+    </div>
+  </body>
+</html>

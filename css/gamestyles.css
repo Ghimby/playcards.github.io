@@ -1,0 +1,271 @@
+/*-----------------------------Concentration-----------------------------*/
+/* Original code taken from: https://codepen.io/cathydutton/pen/avYKeM*/
+#seconds, #tens {
+    font-size: 2em;
+}
+#container {
+    width: 680px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+#container:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+[data-view="card"] {
+    transform: rotateY(180deg);
+    width: 63px;
+    height: 85px;
+    border: solid 1px #d3cece;
+    border-radius: 5px;
+    float: left;
+    margin: 5px;
+    cursor: pointer;
+    background-color: #000000;
+    opacity: 1;
+    background-image:  linear-gradient(30deg, #9a1212 12%, transparent 12.5%, transparent 87%, #9a1212 87.5%, #9a1212), linear-gradient(150deg, #9a1212 12%, transparent 12.5%, transparent 87%, #9a1212 87.5%, #9a1212), linear-gradient(30deg, #9a1212 12%, transparent 12.5%, transparent 87%, #9a1212 87.5%, #9a1212), linear-gradient(150deg, #9a1212 12%, transparent 12.5%, transparent 87%, #9a1212 87.5%, #9a1212), linear-gradient(60deg, #9a121277 25%, transparent 25.5%, transparent 75%, #9a121277 75%, #9a121277), linear-gradient(60deg, #9a121277 25%, transparent 25.5%, transparent 75%, #9a121277 75%, #9a121277);
+    background-size: 10px 18px;
+    background-position: 0 0, 0 0, 5px 9px, 5px 9px, 0 0, 5px 9px;
+}
+.flipped {
+    transition: 0.6s;
+    transform-style: preserve-3d;
+    position: relative;
+    transform: rotateY(0deg);
+}
+.reverse {
+    transition: 0.6s;
+    transform-style: preserve-3d;
+    position: relative;
+    transform: rotateY(180deg);
+}
+.correct {
+    opacity: 0.5;
+    cursor: default;
+    transform-style: preserve-3d;
+    position: relative;
+    transform: rotateY(0deg);
+}
+
+/* Icons */
+.correct[data-item="A_of_clubs"], .flipped[data-item="A_of_clubs"] {
+    background: url(/../images/ace_of_clubs.png) left center no-repeat #fff;
+    background-size: contain;
+}
+.correct[data-item="A_of_spades"], .flipped[data-item="A_of_spades"] {
+    background: url(/../images/ace_of_spades.png) left center no-repeat #fff;
+    background-size: contain;
+}
+.correct[data-item="A_of_hearts"], .flipped[data-item="A_of_hearts"] {
+    background: url(/../images/ace_of_hearts.png) left center no-repeat #fff;
+    background-size: contain;
+}
+.correct[data-item="A_of_diamonds"], .flipped[data-item="A_of_diamonds"] {
+    background: url(/../images/ace_of_diamonds.png) left center no-repeat #fff;
+    background-size: contain;
+}
+
+.correct[data-item="2_of_clubs"], .flipped[data-item="2_of_clubs"] {
+    background: url(/../images/2_of_clubs.png) left center no-repeat #fff;
+    background-size: contain;
+}
+.correct[data-item="2_of_spades"], .flipped[data-item="2_of_spades"] {
+    background: url(/../images/2_of_spades.png) left center no-repeat #fff;
+    background-size: contain;
+}
+.correct[data-item="2_of_hearts"], .flipped[data-item="2_of_hearts"] {
+    background: url(/../images/2_of_hearts.png) left center no-repeat #fff;
+    background-size: contain;
+}
+.correct[data-item="2_of_diamonds"], .flipped[data-item="2_of_diamonds"] {
+    background: url(/../images/2_of_diamonds.png) left center no-repeat #fff;
+    background-size: contain;
+}
+
+.correct[data-item="3_of_clubs"], .flipped[data-item="3_of_clubs"] {
+    background: url(/../images/3_of_clubs.png) left center no-repeat #fff;
+    background-size: contain;
+}
+.correct[data-item="3_of_spades"], .flipped[data-item="3_of_spades"] {
+    background: url(/../images/3_of_spades.png) left center no-repeat #fff;
+    background-size: contain;
+}
+.correct[data-item="3_of_hearts"], .flipped[data-item="3_of_hearts"] {
+    background: url(/../images/3_of_hearts.png) left center no-repeat #fff;
+    background-size: contain;
+}
+.correct[data-item="3_of_diamonds"], .flipped[data-item="3_of_diamonds"] {
+    background: url(/../images/3_of_diamonds.png) left center no-repeat #fff;
+    background-size: contain;
+}
+
+.correct[data-item="4_of_clubs"], .flipped[data-item="4_of_clubs"] {
+    background: url(/../images/4_of_clubs.png) left center no-repeat #fff;
+    background-size: contain;
+}
+.correct[data-item="4_of_spades"], .flipped[data-item="4_of_spades"] {
+    background: url(/../images/4_of_spades.png) left center no-repeat #fff;
+    background-size: contain;
+}
+.correct[data-item="4_of_hearts"], .flipped[data-item="4_of_hearts"] {
+    background: url(/../images/4_of_hearts.png) left center no-repeat #fff;
+    background-size: contain;
+}
+.correct[data-item="4_of_diamonds"], .flipped[data-item="4_of_diamonds"] {
+    background: url(/../images/4_of_diamonds.png) left center no-repeat #fff;
+    background-size: contain;
+}
+
+.correct[data-item="5_of_clubs"], .flipped[data-item="5_of_clubs"] {
+    background: url(/../images/5_of_clubs.png) left center no-repeat #fff;
+    background-size: contain;
+}
+.correct[data-item="5_of_spades"], .flipped[data-item="5_of_spades"] {
+    background: url(/../images/5_of_spades.png) left center no-repeat #fff;
+    background-size: contain;
+}
+.correct[data-item="5_of_hearts"], .flipped[data-item="5_of_hearts"] {
+    background: url(/../images/5_of_hearts.png) left center no-repeat #fff;
+    background-size: contain;
+}
+.correct[data-item="5_of_diamonds"], .flipped[data-item="5_of_diamonds"] {
+    background: url(/../images/5_of_diamonds.png) left center no-repeat #fff;
+    background-size: contain;
+}
+
+.correct[data-item="6_of_clubs"], .flipped[data-item="6_of_clubs"] {
+    background: url(/../images/6_of_clubs.png) left center no-repeat #fff;
+    background-size: contain;
+}
+.correct[data-item="6_of_spades"], .flipped[data-item="6_of_spades"] {
+    background: url(/../images/6_of_spades.png) left center no-repeat #fff;
+    background-size: contain;
+}
+.correct[data-item="6_of_hearts"], .flipped[data-item="6_of_hearts"] {
+    background: url(/../images/6_of_hearts.png) left center no-repeat #fff;
+    background-size: contain;
+}
+.correct[data-item="6_of_diamonds"], .flipped[data-item="6_of_diamonds"] {
+    background: url(/../images/6_of_diamonds.png) left center no-repeat #fff;
+    background-size: contain;
+}
+
+.correct[data-item="7_of_clubs"], .flipped[data-item="7_of_clubs"] {
+    background: url(/../images/7_of_clubs.png) left center no-repeat #fff;
+    background-size: contain;
+}
+.correct[data-item="7_of_spades"], .flipped[data-item="7_of_spades"] {
+    background: url(/../images/7_of_spades.png) left center no-repeat #fff;
+    background-size: contain;
+}
+.correct[data-item="7_of_hearts"], .flipped[data-item="7_of_hearts"] {
+    background: url(/../images/7_of_hearts.png) left center no-repeat #fff;
+    background-size: contain;
+}
+.correct[data-item="7_of_diamonds"], .flipped[data-item="7_of_diamonds"] {
+    background: url(/../images/7_of_diamonds.png) left center no-repeat #fff;
+    background-size: contain;
+}
+
+.correct[data-item="8_of_clubs"], .flipped[data-item="8_of_clubs"] {
+    background: url(/../images/8_of_clubs.png) left center no-repeat #fff;
+    background-size: contain;
+}
+.correct[data-item="8_of_spades"], .flipped[data-item="8_of_spades"] {
+    background: url(/../images/8_of_spades.png) left center no-repeat #fff;
+    background-size: contain;
+}
+.correct[data-item="8_of_hearts"], .flipped[data-item="8_of_hearts"] {
+    background: url(/../images/8_of_hearts.png) left center no-repeat #fff;
+    background-size: contain;
+}
+.correct[data-item="8_of_diamonds"], .flipped[data-item="8_of_diamonds"] {
+    background: url(/../images/8_of_diamonds.png) left center no-repeat #fff;
+    background-size: contain;
+}
+
+.correct[data-item="9_of_clubs"], .flipped[data-item="9_of_clubs"] {
+    background: url(/../images/9_of_clubs.png) left center no-repeat #fff;
+    background-size: contain;
+}
+.correct[data-item="9_of_spades"], .flipped[data-item="9_of_spades"] {
+    background: url(/../images/9_of_spades.png) left center no-repeat #fff;
+    background-size: contain;
+}
+.correct[data-item="9_of_hearts"], .flipped[data-item="9_of_hearts"] {
+    background: url(/../images/9_of_hearts.png) left center no-repeat #fff;
+    background-size: contain;
+}
+.correct[data-item="9_of_diamonds"], .flipped[data-item="9_of_diamonds"] {
+    background: url(/../images/9_of_diamonds.png) left center no-repeat #fff;
+    background-size: contain;
+}
+
+.correct[data-item="10_of_clubs"], .flipped[data-item="10_of_clubs"] {
+    background: url(/../images/10_of_clubs.png) left center no-repeat #fff;
+    background-size: contain;
+}
+.correct[data-item="10_of_spades"], .flipped[data-item="10_of_spades"] {
+    background: url(/../images/10_of_spades.png) left center no-repeat #fff;
+    background-size: contain;
+}
+.correct[data-item="10_of_hearts"], .flipped[data-item="10_of_hearts"] {
+    background: url(/../images/10_of_hearts.png) left center no-repeat #fff;
+    background-size: contain;
+}
+.correct[data-item="10_of_diamonds"], .flipped[data-item="10_of_diamonds"] {
+    background: url(/../images/10_of_diamonds.png) left center no-repeat #fff;
+    background-size: contain;
+}
+
+.correct[data-item="J_of_clubs"], .flipped[data-item="J_of_clubs"] {
+    background: url(/../images/jack_of_clubs2.png) left center no-repeat #fff;
+    background-size: contain;
+}
+.correct[data-item="J_of_spades"], .flipped[data-item="J_of_spades"] {
+    background: url(/../images/jack_of_spades2.png) left center no-repeat #fff;
+    background-size: contain;
+}
+.correct[data-item="J_of_hearts"], .flipped[data-item="J_of_hearts"] {
+    background: url(/../images/jack_of_hearts2.png) left center no-repeat #fff;
+    background-size: contain;
+}
+.correct[data-item="J_of_diamonds"], .flipped[data-item="J_of_diamonds"] {
+    background: url(/../images/jack_of_diamonds2.png) left center no-repeat #fff;
+    background-size: contain;
+}
+
+.correct[data-item="Q_of_clubs"], .flipped[data-item="Q_of_clubs"] {
+    background: url(/../images/queen_of_clubs2.png) left center no-repeat #fff;
+    background-size: contain;
+}
+.correct[data-item="Q_of_spades"], .flipped[data-item="Q_of_spades"] {
+    background: url(/../images/queen_of_spades2.png) left center no-repeat #fff;
+    background-size: contain;
+}
+.correct[data-item="Q_of_hearts"], .flipped[data-item="Q_of_hearts"] {
+    background: url(/../images/queen_of_hearts2.png) left center no-repeat #fff;
+    background-size: contain;
+}
+.correct[data-item="Q_of_diamonds"], .flipped[data-item="Q_of_diamonds"] {
+    background: url(/../images/queen_of_diamonds2.png) left center no-repeat #fff;
+    background-size: contain;
+}
+
+.correct[data-item="K_of_clubs"], .flipped[data-item="K_of_clubs"] {
+    background: url(/../images/king_of_clubs2.png) left center no-repeat #fff;
+    background-size: contain;
+}
+.correct[data-item="K_of_spades"], .flipped[data-item="K_of_spades"] {
+    background: url(/../images/king_of_spades2.png) left center no-repeat #fff;
+    background-size: contain;
+}
+.correct[data-item="K_of_hearts"], .flipped[data-item="K_of_hearts"] {
+    background: url(/../images/king_of_hearts2.png) left center no-repeat #fff;
+    background-size: contain;
+}
+.correct[data-item="K_of_diamonds"], .flipped[data-item="K_of_diamonds"] {
+    background: url(/../images/king_of_diamonds2.png) left center no-repeat #fff;
+    background-size: contain;
+}

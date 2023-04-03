@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Games List (Alphabetical)</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <script type="text/javascript" src="/javascript/jquery.js"></script>
+    <script type="text/javascript">
+      $(window).scroll(function () {
+        var scroll_position = $(window).scrollTop();
+        $("body").css({
+          "background-position-y": +scroll_position + "px",
+        });
+      });
+    </script>
+
+    <div id="wrapper">
+      <div id="header">
+        <div id="title">
+          <a href="index.html"
+            ><img class="logo" src="images/playcards.png" alt="Website Logo"
+          /></a>
+        </div>
+        <div id="menucontainer">
+          <ul id="menu">
+            <li><a href="about.html">ABOUT US</a></li>
+            <li>| <a href="index.html">HOME</a></li>
+            <li>| <a href="about.html">CONTACT US</a></li>
+          </ul>
+        </div>
+      </div>
+      <div id="textcontent">
+        <p id="page-gap"><br /></p>
+        <h3>B</h3>
+        <ul id="game-list">
+          <li><a href="gamePages/comingsoon.html">Blackjack</a></li>
+          <li><a href="gamePages/comingsoon.html">Baccarat</a></li>
+        </ul>
+        <p id="page-gap"><br /></p>
+        <h3>C</h3>
+        <ul id="game-list">
+          <li>
+            <a href="gamePages/concentration.html">Concentration (Pairs)</a>
+          </li>
+        </ul>
+        <p id="page-gap"><br /></p>
+        <h3>G</h3>
+        <ul id="game-list">
+          <li><a href="gamePages/comingsoon.html">Gin Rummy</a></li>
+          <li><a href="gamePages/comingsoon.html">Go Fish</a></li>
+          <li><a href="gamePages/comingsoon.html">Golf</a></li>
+        </ul>
+        <p id="page-gap"><br /></p>
+        <h3>P</h3>
+        <ul id="game-list">
+          <li><a href="gamePages/comingsoon.html">Poker (Draw)</a></li>
+          <li><a href="gamePages/comingsoon.html">Poker (Stud)</a></li>
+          <li>
+            <a href="gamePages/comingsoon.html">Poker (Texas Hold'em)</a>
+          </li>
+        </ul>
+        <p id="page-gap"><br /></p>
+        <h3>R</h3>
+        <ul id="game-list">
+          <li><a href="gamePages/comingsoon.html">Rummy</a></li>
+        </ul>
+        <p id="page-gap"><br /></p>
+        <h3>W</h3>
+        <ul id="game-list">
+          <li><a href="gamePages/war.html">War</a></li>
+          <li><a href="gamePages/war.html">War-r-r</a></li>
+        </ul>
+        <p id="page-gap"><br /></p>
+        <a class="jump-to-top" href="#">Jump to Top</a>
+        <p id="page-gap"><br /></p>
+      </div>
+    </div>
+  </body>
+</html>
